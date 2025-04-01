@@ -1,8 +1,8 @@
 // Couleurs disponibles pour l'étape 1
 // Couleurs disponibles pour l'étape 2
 
-class Mastermind {
 
+class Mastermind {
 // Constructeur de la classe Mastermind avec des paramètres par défaut {
         // Initialisation selon l'étape
         // Convertit l'étape en entier
