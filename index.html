@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind - © Marine GAREIN</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>MASTERMIND</h1>
+    <p class="subtitle">Maîtrisez les codes, décodez la victoire !</p>
+
+    <div class="settings-panel">
+
+        <div class="setting-group">
+            <div class="setting-label">Niveau de difficulté</div>
+            <select id="difficulty" class="dropdown">
+                <option value="1">Facile (2 couleurs, 4 disponibles)</option>
+                <option value="2">Moyen (4 couleurs, 8 disponibles)</option>
+                <option value="3" selected>Difficile (4 couleurs, doublons autorisés)</option>
+            </select>
+        </div>
+
+        <div class="setting-group">
+            <div class="setting-label">Nombre d'essais: <span id="attempts-value">12</span></div>
+            <input type="range" min="5" max="20" value="12" class="setting-slider" id="attempts-slider">
+        </div>
+
+        <button id="start-game-btn" class="btn btn-submit">Nouvelle partie</button>
+
+    </div>
+
+    <div class="game-container">
+
+        <div class="left-panel">
+            <div class="game-info">
+                <div class="attempts-display">Essai: <span id="current-attempt">1</span>/<span id="max-attempts">12</span></div>
+                <div class="difficulty-display">Niveau <span id="level-display">3</span></div>
+            </div>
+            
+            <div class="color-palette" id="color-palette">
+                <button class="color-btn color-red" data-color="red"></button>
+                <button class="color-btn color-green" data-color="green"></button>
+                <button class="color-btn color-blue" data-color="blue"></button>
+                <button class="color-btn color-yellow" data-color="yellow"></button>
+                <button class="color-btn color-purple" data-color="purple"></button>
+                <button class="color-btn color-orange" data-color="orange"></button>
+                <button class="color-btn color-pink" data-color="pink"></button>
+                <button class="color-btn color-cyan" data-color="cyan"></button>
+            </div>
+            
+            <div class="current-selection" id="current-selection">
+                <div class="color-slot empty" data-index="0"></div>
+                <div class="color-slot empty" data-index="1"></div>
+                <div class="color-slot empty" data-index="2"></div>
+                <div class="color-slot empty" data-index="3"></div>
+            </div>
+            
+            <div class="control-buttons">
+                <button id="reset-btn" class="btn btn-reset">Effacer</button>
+                <button id="submit-btn" class="btn btn-submit" disabled>Valider</button>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <h2 class="results-title">Historique des essais</h2>
+            <div class="guess-history" id="guess-history">
+                <!-- L'historique des essais sera généré ici -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" id="result-modal">
+
+        <div class="modal-content">
+            <h2 class="modal-title" id="modal-title">Félicitations!</h2>
+            <p class="modal-message" id="modal-message">Vous avez trouvé la combinaison en X essais!</p>
+            
+            <div class="secret-code" id="secret-code">
+                <!-- Le code secret sera affiché ici -->
+            </div>
+            
+            <button id="new-game-btn" class="btn btn-submit">Nouvelle partie</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

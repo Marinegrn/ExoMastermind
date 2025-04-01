@@ -1,0 +1,57 @@
+// Couleurs disponibles pour l'étape 1
+// Couleurs disponibles pour l'étape 2
+
+class Mastermind {
+
+// Constructeur de la classe Mastermind avec des paramètres par défaut {
+        // Initialisation selon l'étape
+        // Convertit l'étape en entier
+        // Nombre maximum de tentatives autorisées
+        // Compteur de tentatives initialisé à 0
+        // Définit les couleurs disponibles en fonction de l'étape
+        // Définit la longueur du code secret en fonction de l'étape
+        // Autorise les doublons dans le code secret si l'étape est 3 ou plus
+        // Initialise le tableau du code secret
+        
+        // Générer un code aléatoire
+        // Appelle la méthode pour générer un code secret aléatoire
+        
+        // Affiche l'étape pour débogage
+        // Affiche le code secret pour débogage
+    };
+
+    // Fonction pour générer un code aléatoire {
+        // Initialise un tableau vide pour le code secret {
+        // Continue jusqu'à ce que la longueur du code atteigne la longueur requise { 
+            // Sélectionne une couleur aléatoire parmi les couleurs disponibles {
+                // Ajoute la couleur si les doublons sont autorisés ou si elle n'est pas déjà dans le code
+                // Ajoute la couleur au code
+            }
+        }
+        return code; // Retourne le code généré
+    };
+
+    // Fonction pour vérifier si la proposition ne contient que des couleurs valides { 
+        // Vérifie si la proposition est un tableau et si sa longueur est correcte {
+            // Retourne faux si la proposition est invalide
+        }
+        
+        // Parcourt chaque couleur de la proposition {
+            // Vérifie si la couleur est dans les couleurs disponibles {
+                // Retourne faux si une couleur est invalide
+            }
+        }
+        
+        // Vérifier l'unicité des couleurs pour les étapes 1 et 2
+        // Si les doublons ne sont pas autorisés {
+            // Crée un ensemble des couleurs uniques {
+                // Compare la taille de l'ensemble avec la longueur de la proposition
+                // Retourne faux si des doublons sont détectés
+            }
+        }
+        
+        return true; // Retourne vrai si la proposition est valide
+    };
+};
+
+};
