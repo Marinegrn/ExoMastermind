@@ -1,5 +1,6 @@
 const COLORS_STEP1 = ["red", "green", "blue", "yellow"];
 const COLORS_STEP2 = ["red", "green", "blue", "yellow", "purple", "orange", "pink", "cyan"];
+
 class Mastermind {
   constructor(step = 3, maxAttempts = 12) {
 
@@ -28,7 +29,6 @@ checkValidColors(proposition) {
     }
   }
               
-
   if (!this.allowDuplicates) {
     const uniqueColors = new Set(proposition);
     if (uniqueColors.size !== proposition.length) {
