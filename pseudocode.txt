@@ -28,7 +28,7 @@ class Mastermind {
                 // Ajoute la couleur au code
             }
         }
-        return code; // Retourne le code généré
+        // Retourne le code généré
     };
 
     // Fonction pour vérifier si la proposition ne contient que des couleurs valides { 
@@ -50,7 +50,7 @@ class Mastermind {
             }
         }
         
-        return true; // Retourne vrai si la proposition est valide
+       // Retourne vrai si la proposition est valide
     };
 };
 

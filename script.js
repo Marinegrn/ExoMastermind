@@ -1,11 +1,10 @@
 
-// Définition des couleurs disponibles
 const COLORS_STEP1 = ["red", "green", "blue", "yellow"];
 const COLORS_STEP2 = ["red", "green", "blue", "yellow", "purple", "orange", "pink", "cyan"];
 
 class Mastermind {
   constructor(step = 3, maxAttempts = 12) {
-  // Initialisation selon l'étape
+
     this.step = parseInt(step);
     this.maxAttempts = maxAttempts;
     this.attempts = 0;
@@ -14,14 +13,13 @@ class Mastermind {
     this.allowDuplicates = this.step >= 3;
     this.secretCode = [];
               
-    // Générer un code aléatoire
     this.secretCode = this.generateRandomCode();
               
   //console.log("Jeu initialisé à l'étape", this.step);
   //console.log("Code secret (pour débogage):", this.secretCode);
-  }
+  };
 
-// Vérifier si la proposition ne contient que des couleurs valides
+
 checkValidColors(proposition) {
   if (!Array.isArray(proposition) || proposition.length !== this.codeLength) {
       return false;
@@ -33,7 +31,7 @@ checkValidColors(proposition) {
     }
   }
               
-// Vérifier l'unicité des couleurs pour les étapes 1 et 2
+
   if (!this.allowDuplicates) {
     const uniqueColors = new Set(proposition);
     if (uniqueColors.size !== proposition.length) {
@@ -49,7 +47,6 @@ checkValidColors(proposition) {
 checkCorrectCombination(proposition) {
   return JSON.stringify(proposition) === JSON.stringify(this.secretCode);
 };
-
 
 // Fonction pour évaluer une proposition et retourner les résultats
 evaluateGuess(proposition) {
