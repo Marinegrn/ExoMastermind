@@ -39,12 +39,12 @@ checkValidColors(proposition) {
       return true;
 };
 
-// Vérifier si la proposition est correcte
+
 checkCorrectCombination(proposition) {
   return JSON.stringify(proposition) === JSON.stringify(this.secretCode);
 };
 
-// Fonction pour évaluer une proposition et retourner les résultats
+
 evaluateGuess(proposition) {
   if (!this.checkValidColors(proposition)) {
     return { 

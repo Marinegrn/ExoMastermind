@@ -11,10 +11,10 @@ class Mastermind {
         // Définit les couleurs disponibles en fonction de l'étape
         // Définit la longueur du code secret en fonction de l'étape
         // Autorise les doublons dans le code secret si l'étape est 3 ou plus
+
         // Initialise le tableau du code secret
         
-        // Générer un code aléatoire
-        // Appelle la méthode pour générer un code secret aléatoire
+        // Générer un code aléatoire // Appelle la méthode pour générer un code secret aléatoire
         
         // Affiche l'étape pour débogage
         // Affiche le code secret pour débogage
@@ -53,5 +53,17 @@ class Mastermind {
        // Retourne vrai si la proposition est valide
     };
 };
+}:
 
+// Vérifier si la proposition est correcte avec en paramètre proposition {
+    // retourne un JSON avec en paramètre la proposition s'il est strictement égal au JSON qui stocke le code secret    
 };
+
+// Fonction pour évaluer une proposition avec en paramètre proposition
+    // retourner {
+        valide: faux,
+        message: affiche un message dans la console de proposition invalide
+    }
+
+incrémentation d'un essai;
+
