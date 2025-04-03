@@ -1,5 +1,6 @@
 # MASTERMIND 🎲
-- Nombre de joueurs requis: **2** 
+- Nombre de joueurs requis pour le jeu PC: **1**
+- Nombre de joueurs requis pour le jeu de société: **2** 
 
 ## Règles du jeu
 
