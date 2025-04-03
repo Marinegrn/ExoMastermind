@@ -359,7 +359,7 @@ evaluateGuess(proposition) {
                   this.modalMessage.textContent = `Vous avez trouvé la combinaison en ${this.game.attempts} essais!`;
                   this.displaySecretCode();
                   this.openModal();
-              }
+              } // add else/else if 
           }
 
           openModal() {
