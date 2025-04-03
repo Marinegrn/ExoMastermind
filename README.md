@@ -24,7 +24,7 @@ Le code en JavaScript utilise des **classes** pour encapsuler des fonctionnalit�
 ## CSS, quelques propriétés importantes
 
 ### Flexbox, Root & Grid
-Pour la mise en page, des techniques modernes comme **Flexbox** et **CSS Grid** sont utilisées. Ces outils permettent de créer des mises en page réactives et bien structurées.
+Pour la mise en page, des techniques modernes comme **Flexbox** et **CSS Grid** sont utilisées. Ces outils permettent de créer des mises en page responsive, structurées et plus optimisées pour une utilisation mobile.
 
 #### Exemples d'utilisation :
 - Flexbox est utilisé avec des propriétés comme `display: flex`, `justify-content`, et `align-items`
