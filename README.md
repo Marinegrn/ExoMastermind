@@ -7,7 +7,7 @@
 Kézako ? Initialement, le premier joueur choisit une combinaison de couleurs, puis le deuxième joueur doit deviner les couleurs et dans quels ordres sont placées ces dernières. 
 Le premier joueur indique alors avec des pions noirs et blancs si la position et l'exactitude des couleurs sont correctes ou non. Par conséquent, il y a un codemaker et un codebreaker.
 
-Dans la version "ordinateur", le codebreaker: c'est l'utilisateur.ice. Lors de chaque partie, l'ordinateur va générer aléatoirement une combinaison de couleurs.
+Dans la version PC, le codebreaker: c'est l'utilisateur.ice. Lors de chaque partie, l'ordinateur va générer aléatoirement une combinaison de couleurs.
 Trois niveaux sont disponibles: Facile, Moyen et Difficile... dans lequel les doublons sont autorisés. 
 A vous de jouer !
 
