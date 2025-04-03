@@ -12,7 +12,7 @@ A vous de jouer !
 - HTML & CSS
 - JavaScript
 
-## JavaScript, méthodes et concepts Utilisés
+## JavaScript, méthodes et concepts utilisés
 
 ### Classes et Constructeurs
 Le code en JavaScript utilise des **classes** pour encapsuler des fonctionnalités et structurer le code de manière modulaire; c'est une structure qui permet de définir des objets avec des propriétés et des méthodes associées. Les **constructeurs** (`constructor`) sont des méthodes spéciales utilisées pour initialiser les objets créés à partir de la classe. Ils permettent de définir les propriétés initiales de l'objet.
@@ -21,7 +21,7 @@ Le code en JavaScript utilise des **classes** pour encapsuler des fonctionnalit�
 - La classe est définie avec le `class Mastermind` et `class MastermindUI`
 - Le constructeur est appelé automatiquement lors de la création d'une instance de la classe avec le mot-clé `new`
 
-## CSS, quelques concepts utilisés
+## CSS, quelques propriétés importantes
 
 ### Flexbox, Root & Grid
 Pour la mise en page, des techniques modernes comme **Flexbox** et **CSS Grid** sont utilisées. Ces outils permettent de créer des mises en page réactives et bien structurées.
