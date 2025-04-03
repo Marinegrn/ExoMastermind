@@ -29,7 +29,7 @@ Pour la mise en page, des techniques modernes comme **Flexbox** et **CSS Grid** 
 #### Exemples d'utilisation :
 - Flexbox est utilisé avec des propriétés comme `display: flex`, `justify-content`, et `align-items`
 - CSS Grid est utilisé avec des propriétés comme `display: grid`, `grid-template-columns`, et `grid-gap`
-- l'uutilisation de `:root` permet d'éviter la répétition des propriétes telles que `color`ou encore `background-color`
+- l'uutilisation de `:root` permet d'éviter la répétition des propriétes telles que `color`ou encore `background-color`dans les sélecteurs
 
 ## Autrice:
 - Marine GAREIN | Apprenante Ada TECH School, promotion Frances Spence
