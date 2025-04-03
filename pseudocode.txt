@@ -59,11 +59,23 @@ class Mastermind {
     // retourne un JSON avec en paramètre la proposition s'il est strictement égal au JSON qui stocke le code secret    
 };
 
-// Fonction pour évaluer une proposition avec en paramètre proposition
-    // retourner {
-        valide: faux,
-        message: affiche un message dans la console de proposition invalide
+// Fonction pour évaluer une proposition avec en paramètre proposition {
+    // Si la proposition n'est pas correcte {
+        // retourner {
+            valide: faux,
+            message: affiche un message dans la console de proposition invalide
+        };
+    }   
+
+    incrémentation d'un essai;
+
+    // Si la combinaison est correcte {
+        reourne {
+            validation: vrai,
+            victoire: vrai,
+            exact: longueur du code,
+            partial: 0,
+            message: affiche un message de victoire avec le nombre d'essai
+        };
     }
-
-incrémentation d'un essai;
-
+}

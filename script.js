@@ -55,7 +55,6 @@ evaluateGuess(proposition) {
 
   this.attempts++;
               
-  // Si la combinaison est correcte
   if (this.checkCorrectCombination(proposition)) {
     return { 
       valid: true, 
