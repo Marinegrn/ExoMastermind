@@ -143,7 +143,8 @@ evaluateGuess(proposition) {
                   secretCode: this.secretCode 
               };
           }
-      }
+}
+
 
       class MastermindUI {
           constructor() {
