@@ -351,7 +351,7 @@ resetGame() { // TODO: débogage barre nbs d'essais lorsqu'on reset
                   this.openModal();
               } else if (result.gameOver) {
                   if (this.resultModal && this.modalTitle && this.modalMessage) { // débogage 
-                      this.modalTitle.textContent = "Dommage !";
+                      this.modalTitle.textContent = "Dommage...";
                       this.modalMessage.textContent = `Vous avez épuisé tous vos essais. Le code secret était: ${this.game.secretCode.join(", ")}.`;
                       this.displaySecretCode();
                       this.openModal();
