@@ -360,7 +360,7 @@ evaluateGuess(proposition) {
                   this.displaySecretCode();
                   this.openModal();
               } else if (result.gameOver) {
-                  if (this.resultModal && this.modalTitle && this.modalMessage) {
+                  if (this.resultModal && this.modalTitle && this.modalMessage) { // oubli de 
                       this.modalTitle.textContent = "Dommage !";
                       this.modalMessage.textContent = `Vous avez épuisé tous vos essais. Le code secret était: ${this.game.secretCode.join(", ")}.`;
                       this.displaySecretCode();
