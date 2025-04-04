@@ -10,8 +10,7 @@ class Mastermind {
     this.availableColors = this.step === 1 ? COLORS_STEP1 : COLORS_STEP2;
     this.codeLength = this.step === 1 ? 2 : 4;
     this.allowDuplicates = this.step >= 3;
-    this.secretCode = [];
-              
+    this.secretCode = [];         
     this.secretCode = this.generateRandomCode();
               
   //console.log("Jeu initialisé à l'étape", this.step);
@@ -34,8 +33,7 @@ checkValidColors(proposition) {
     if (uniqueColors.size !== proposition.length) {
       return false;
     }
-  }
-              
+  }          
       return true;
 };
 
@@ -65,39 +63,36 @@ evaluateGuess(proposition) {
     };
   }
               
-  // Calculer les pions bien placés et mal placés
+ 
   let exactMatch = 0;
   let partialMatch = 0;
               
-  // Copie des tableaux pour pouvoir les modifier
   const codeCopy = [...this.secretCode];
   const propositionCopy = [...proposition];
               
-  // Vérifier d'abord les couleurs bien placées
   for (let i = 0; i < this.codeLength; i++) {
     if (propositionCopy[i] === codeCopy[i]) {
       exactMatch++;
-      // Marquer les éléments correspondants (pour ne pas les compter deux fois)
+
       codeCopy[i] = null;
       propositionCopy[i] = undefined;
      }
   }
               
-  // Vérifier ensuite les couleurs présentes mais mal placées
   for (let i = 0; i < this.codeLength; i++) {
     if (propositionCopy[i] !== undefined) {
       const index = codeCopy.indexOf(propositionCopy[i]);
         if (index !== -1) {
           partialMatch++;
-          codeCopy[index] = null; // Marquer comme déjà compté
+          codeCopy[index] = null;
         }
     }
 }
               
-  // Vérifier si le joueur a atteint le nombre maximal d'essais
-  const outOfAttempts = this.attempts >= this.maxAttempts;
+
+const outOfAttempts = this.attempts >= this.maxAttempts;
               
-  return {
+return {
     valid: false,
     won: false,
     gameOver: outOfAttempts,
@@ -112,39 +107,34 @@ evaluateGuess(proposition) {
 };
 
 
-
-          // Générer un code aléatoire
-          generateRandomCode() {
-              const code = [];
-              const colors = [...this.availableColors];
+generateRandomCode() {
+    const code = [];
+    const colors = [...this.availableColors];
               
-              for (let i = 0; i < this.codeLength; i++) {
-                  if (this.allowDuplicates) {
-                      // Si les doublons sont autorisés, simplement choisir une couleur au hasard
-                      const randomIndex = Math.floor(Math.random() * this.availableColors.length);
-                      code.push(this.availableColors[randomIndex]);
-                  } else {
-                      // Si les doublons ne sont pas autorisés, retirer les couleurs déjà choisies
-                      const randomIndex = Math.floor(Math.random() * colors.length);
-                      code.push(colors[randomIndex]);
-                      colors.splice(randomIndex, 1);
-                  }
-              }
+    for (let i = 0; i < this.codeLength; i++) {
+        if (this.allowDuplicates) {
+            const randomIndex = Math.floor(Math.random() * this.availableColors.length);
+            code.push(this.availableColors[randomIndex]);
+        } else {
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            code.push(colors[randomIndex]);
+            colors.splice(randomIndex, 1);
+            }
+    }
               
-              return code;
-          }
+    return code;
+};
 
-          // Réinitialiser le jeu pour une nouvelle partie
-          resetGame() {
-              this.attempts = 0;
-              this.secretCode = this.generateRandomCode();
-              return { 
-                  message: "Nouvelle partie initialisée", 
-                  secretCode: this.secretCode 
-              };
-          }
-}
 
+resetGame() {
+    this.attempts = 0;
+    this.secretCode = this.generateRandomCode();
+    return { 
+        message: "Nouvelle partie initialisée", 
+        secretCode: this.secretCode 
+    }
+};
+};
 
       class MastermindUI {
           constructor() {
@@ -366,7 +356,7 @@ evaluateGuess(proposition) {
                       this.displaySecretCode();
                       this.openModal();
                   } else {
-                      console.error("Modal elements are not properly initialized in the DOM.");
+                      console.error("Modal elements are not properly initialized in the DOM."); // débogage, message d'erreur
                   }
               }
           }

@@ -1,8 +1,8 @@
 // Couleurs disponibles pour l'étape 1
 // Couleurs disponibles pour l'étape 2
 
-class Mastermind {
-// Constructeur de la classe Mastermind avec des paramètres par défaut {
+// Déclaration de la classe Mastermind {
+       // Constructeur de la classe Mastermind avec des paramètres par défaut {
 
         // Initialisation selon l'étape
         // Convertit l'étape en entier
@@ -11,24 +11,11 @@ class Mastermind {
         // Définit les couleurs disponibles en fonction de l'étape
         // Définit la longueur du code secret en fonction de l'étape
         // Autorise les doublons dans le code secret si l'étape est 3 ou plus
-
         // Initialise le tableau du code secret
-        
-        // Générer un code aléatoire // Appelle la méthode pour générer un code secret aléatoire
+        // Générer un code aléatoire // Appelle la fonction generateRandomCode pour générer un code secret aléatoire
         
         // Affiche l'étape pour débogage
         // Affiche le code secret pour débogage
-    };
-
-    // Fonction pour générer un code aléatoire {
-        // Initialise un tableau vide pour le code secret {
-        // Continue jusqu'à ce que la longueur du code atteigne la longueur requise { 
-            // Sélectionne une couleur aléatoire parmi les couleurs disponibles {
-                // Ajoute la couleur si les doublons sont autorisés ou si elle n'est pas déjà dans le code
-                // Ajoute la couleur au code
-            }
-        }
-        // Retourne le code généré
     };
 
     // Fonction pour vérifier si la proposition ne contient que des couleurs valides { 
@@ -42,18 +29,15 @@ class Mastermind {
             }
         }
         
-        // Vérifier l'unicité des couleurs pour les étapes 1 et 2
         // Si les doublons ne sont pas autorisés {
-            // Crée un ensemble des couleurs uniques {
-                // Compare la taille de l'ensemble avec la longueur de la proposition
+            // Crée un ensemble des couleurs uniques
+                // Compare la taille de l'ensemble avec la longueur de la proposition {
                 // Retourne faux si des doublons sont détectés
             }
-        }
-        
+        }  
        // Retourne vrai si la proposition est valide
     };
 };
-}:
 
 // Vérifier si la proposition est correcte avec en paramètre proposition {
     // retourne un JSON avec en paramètre la proposition s'il est strictement égal au JSON qui stocke le code secret    
@@ -79,3 +63,76 @@ class Mastermind {
         };
     }
 }
+// Calculer les pions bien placés et mal placés
+// Initialiser les compteurs pour les correspondances exactes (bonne couleur et bonne position) 
+// Initialiser les correspondances partielles (bonne couleur mais mauvaise position).
+
+// Copie des tableaux pour pouvoir les modifier
+// Créer des copies du code secret
+// Créer des copies des propositions du joueur pour permettre des modifications sans altérer les tableaux originaux.
+
+// Vérifier d'abord les couleurs bien placées
+// Parcourir les tableaux pour vérifier les correspondances exactes (bonne couleur et bonne position).
+    // Si une correspondance exacte est trouvée, 
+    // incrémenter le compteur exactMatch 
+    
+    // marquer les éléments pour ne pas les compter 2 fois 
+    
+
+// Vérifier ensuite les couleurs présentes mais mal placées
+// Parcourir à nouveau les tableaux pour vérifier les correspondances partielles (bonne couleur mais mauvaise position)
+    // Si une correspondance partielle est trouvée
+    // incrémenter le compteur partialMatch et marquer l'élément correspondant
+    // dans le tableau du code secret pour éviter de le compter plusieurs fois
+
+ // Déclaration d'une constante qui permet de vérifier si le joueur a atteint le nombre maximal d'essais
+
+// Retourne un objet contenant les informations sur l'état actuel du jeu {
+return {
+    // Indique si l'entrée est valide (toujours faux dans ce cas)
+    // Indique si le joueur a gagné (toujours faux dans ce cas)
+    // Indique si la partie est terminée en raison d'un manque d'essais
+    // Nombre de correspondances exactes (bien placées) entre l'entrée et le code secret
+    // Nombre de correspondances partielles (mal placées) entre l'entrée et le code secret
+    // Nombre d'essais effectués par le joueur jusqu'à présent
+    // Nombre d'essais restants avant la fin de la partie
+    // Message décrivant l'état actuel du jeu, soit la fin de la partie avec le code secret révélé
+    // soit un résumé des résultats de l'essai actuel et le nombre d'essais restants
+
+};
+};
+
+// Fonction pour générer un code aléatoire {
+    // Initialise un tableau vide pour le code 
+    // Initialise les couleurs et continue de parcourir le tableau jusqu'à ce que la longueur du code atteigne la longueur requise 
+    // Boucle pour générer un code de la longueur spécifiée (this.codeLength) {
+        // Si les doublons sont autorisés, choisir une couleur aléatoire parmi les couleurs disponibles {
+         // Ajouter la couleur choisie au code {
+                } else {
+                    // Si les doublons ne sont pas autorisés, retirer les couleurs déjà choisies de la liste
+                    // Initialiser une constante randomIndex
+                    // Ajouter la couleur choisie au code dans le randomIndex
+                    // Supprimer la couleur choisie de la liste pour éviter les doublons
+                }
+        }
+    }
+
+    // Retourner le code généré;
+};
+
+// Fonction pour réinitialiser le jeu pour une nouvelle partie {   
+    // remettre le nomre de tentatives à O
+    // générer un nouveau code de couleur aléatoire en appelant la fonction generateRanomCode();
+        retourner {
+            un message dans la console qui indique qu'une nouvelle partie est initialisée,
+            qu'un nouveau code secret est de nouveau généré
+        }
+
+};
+
+// Déclaration de la calsse MasterminUI, dédiée au éléments du DOM et l'interface graphique {
+    
+}
+
+
+ 
