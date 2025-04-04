@@ -126,7 +126,7 @@ generateRandomCode() {
 };
 
 
-resetGame() {
+resetGame() { // TODO: débogage barre nbs d'essais lorsqu'on reset
     this.attempts = 0;
     this.secretCode = this.generateRandomCode();
     return { 
@@ -378,7 +378,7 @@ resetGame() {
               });
           }
 
-          updateUI() {
+          updateUI() { /// TODO: débogage barre nbs d'essais lorsqu'on reset
               this.currentAttemptEl.textContent = this.game.attempts + 1;
               this.maxAttemptsEl.textContent = this.game.maxAttempts;
               this.levelDisplayEl.textContent = this.game.step;
@@ -389,4 +389,5 @@ resetGame() {
       document.addEventListener('DOMContentLoaded', () => {
           new MastermindUI();
           ui.initializeGame(); // Démarrer une nouvelle partie automatiquement
+          /// TODO: débogage barre nbs d'essais lorsqu'on reset -> appel fonction update UI ?
       });
