@@ -98,7 +98,7 @@ evaluateGuess(proposition) {
   const outOfAttempts = this.attempts >= this.maxAttempts;
               
   return {
-    valid: true,
+    valid: false,
     won: false,
     gameOver: outOfAttempts,
     exact: exactMatch,
@@ -355,11 +355,20 @@ evaluateGuess(proposition) {
           
           showResultModal(result) {
               if (result.won) {
-                  this.modalTitle.textContent = "Félicitations!";
-                  this.modalMessage.textContent = `Vous avez trouvé la combinaison en ${this.game.attempts} essais!`;
+                  this.modalTitle.textContent = "Félicitations !";
+                  this.modalMessage.textContent = `Vous avez trouvé la combinaison en ${this.game.attempts} essais !`;
                   this.displaySecretCode();
                   this.openModal();
-              } // add else/else if 
+              } else if (result.gameOver) {
+                  if (this.resultModal && this.modalTitle && this.modalMessage) {
+                      this.modalTitle.textContent = "Dommage !";
+                      this.modalMessage.textContent = `Vous avez épuisé tous vos essais. Le code secret était: ${this.game.secretCode.join(", ")}.`;
+                      this.displaySecretCode();
+                      this.openModal();
+                  } else {
+                      console.error("Modal elements are not properly initialized in the DOM.");
+                  }
+              }
           }
 
           openModal() {
